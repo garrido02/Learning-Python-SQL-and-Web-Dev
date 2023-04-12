@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="trivia.js"></script>
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>What is the name of the main character of the Lord of The Rings Franchise?</h3>
+
+                <!-- TODO: Add multiple choice question here -->
+                <div class="btn-group">
+                    <button class="correct" onclick="function(right)">Frodo</button>
+                    <button class="incorrect" onclick="function(wrong)">Sam</button>
+                    <button class="incorrect" onclick="function(wrong)">Gandalf</button>
+                    <button class="incorrect" onclick="function(wrong)">Sauron</button>
+                    <button class="incorrect" onclick="function(wrong)">Saruman</button>
+
+                    <p id="feedback1"></p>
+                  </div>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>Can you write the title of the first LOTR book?</h3>
+
+                <!-- create a form that has an input bar and submit button-->
+                <input autocomplete="off" autofocus id="title" type="text">
+                <button id="submit" onclick="function(check)">Check Awnser</button>
+
+                <p id="feedback2"></p>
+
+            </div>
+        </div>
+    </body>
+</html>
